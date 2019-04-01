@@ -138,6 +138,7 @@ class EventReadDetailedSerializer(TagSerializerMixin, BasisModelSerializer):
             "registration_count",
             "survey",
             "use_consent",
+            "mazemap_poi",
         )
         read_only = True
 

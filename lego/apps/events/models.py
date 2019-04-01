@@ -82,6 +82,7 @@ class Event(Content, BasisModel, ObjectPermissionsModel):
     payment_overdue_notified = models.BooleanField(default=False)
     is_ready = models.BooleanField(default=True)
     use_consent = models.BooleanField(default=False)
+    mazemap_poi = models.PositiveIntegerField(null=True)
 
     class Meta:
         permission_handler = EventPermissionHandler()
